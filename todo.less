@@ -1,0 +1,90 @@
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition-duration: 150ms;
+  -moz-transition-duration: 150ms;
+  -o-transition-duration: 150ms;
+  transition-duration: 150ms;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Open Sans',"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  background: #f0f1f2;
+  color: #444;
+  padding: 1rem;
+  text-shadow: 0 1px 0 #fff;
+}
+
+a, a:visited {
+  cursor: pointer;
+  color: brown;
+  &:hover {
+    color: #800000;
+  }
+}
+
+webview {
+  width: 100%;
+  height: 200px;
+}
+
+@-webkit-keyframes switch-green {
+  from { background-color: white;} to {background-color: rgb(163, 255, 163);}
+}
+@-webkit-keyframes switch-red {
+  from { background-color: white;} to {background-color: rgb(255, 203, 203);}
+}
+.dragging {
+  -webkit-animation: switch-green 0.5s ease-in-out 0 infinite alternate;
+}
+
+.invalid-dragging {
+  -webkit-animation: switch-red 0.5s ease-in-out 0 infinite alternate;
+}
+
+ul {
+  list-style: none;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+button, input[type=submit] {
+  background-color: brown;
+  background-image: linear-gradient(top, #08C, #05C);
+  border: none;
+  color: white;
+  padding: .5rem 2rem;
+  &:hover {
+    -webkit-opacity: .9;
+    opacity: .9;
+  }
+}
+
+input[type=text], button, input[type=submit] {
+  padding: .4rem 1rem;
+}
+
+input[type=checkbox] {
+  &:active {
+    position: relative;
+    top: 1px;
+  }
+}
+
+.done-true {
+  text-decoration: line-through;
+  color: #777;
+  font-style: italic;
+}
+
+a[ng-click^='launch'] {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem
+}
