@@ -3,6 +3,10 @@
 
 A simple todo app for Chrome.
 
-* How to install: Drop `To Done.crx` file from `install` directory to `chrome://extensions` to install app.
+### Features
+* Todo list
+* ... just a todo list
+* ...... with dnd (drap and drop) feature to add file as todos
 
-Be sure to enable `Experimental Extension APIs` in `chrome://flags`
+### Install
+Just drop `To Done.crx` file from `install` directory to `chrome://extensions` to install app.
